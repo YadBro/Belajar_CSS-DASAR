@@ -1,0 +1,80 @@
+/* PSEUDO CLASS atau KELAS SEMU adalah sebuah kelas yang aktif dalam keadaan tertentu saja.
+
+    "Dalam menuliskan PSEUDO Class harus di awali dengan titik dua ( : ).
+
+    PSEUDO CLASS terbagi menjadi beberapa tipe:
+    (BAGIAN 1) = PSEUDO CLASS yang berhubungan dengan link
+    1. :link    = style default pada sebuah link.
+    2. :hover   = style ketika kursor mouse berada diatas sebuah link / element.
+    3. :active  = style ketika sebuah link di klik (keadaan aktif).
+    4. :visited = style ketika sebuah link sudah pernah dibuat di kunjungi sebelumnya (menggunakan browser yang sama).
+
+    (BAGIAN 2) = PSEUDO CLASS yang berhubungan dengan posisi atau urutan element
+    PSEUDO CLASS bagian 2 ini akan aktif ketika tag elementnya merupakan child dari element lain".
+    1.  :first-child    = memilih element pertama dari sebuah parent.
+    2.  :last-child     = memilih element terakhir dari sebuah parent.
+    3.  :nth-child(n)   = memilih element ke-n dari sebuah parent.
+
+    "contoh kasus PSEUDO CLASS bagian 2 lihat di index_pseudo_class(bagian2).html"
+
+*/
+
+/* Tolong carikan anak pertama dari tag element li yaitu tag element a kemudian ubah warnanya menjadi hijau */
+li:first-child a{
+    color: green;
+}
+
+
+/* Tolong carikan anak terakhir dari tag element li yaitu tag element a kemudian ubah warnanya menjadi hijau */
+li:last-child a{
+    color: green;
+}
+
+
+/* Tolong carikan anak yang ke-(n) dari tag element li yaitu tag element a kemudian ubah warnanya menjadi hijau */
+li:nth-child(3) a{ /* urutan anak ke 3 */
+    color: green;
+}
+
+li:nth-child(2n) a{ /* urutan anak kelipatan 2 (2, 4, 6, 8, dsb) */
+    color: green;
+}
+
+/* urutan anak kelipatan 2 (2, 4, 6, 8, dsb). Ada tanda ( - ) itu menandakan ingin dimulai dari ke berapa.
+Karena 2n itu kelipatan 2 maka yang 1 di loncat. apabila ingi dari 1
+hitung ke adaan awal kelipatannya yaitu 2. ingin dari 1 ( tinggal 2-1 saja)
+*/
+li:nth-child(2n-2) a{
+    color: yellow;
+}
+
+li:nth-child(2n+1) a{
+    color: red;
+}
+
+
+/* ATAU bisa menggunakan even(kelipatan genap) dan juga odd(kelipatan ganjil) sebagai parameter dari nth-child.
+
+contoh :
+li:nth-child(even) a{ "Kelipatan Genap"
+    color: red;
+}
+
+li:nth-child(odd) a{ "Kelipatan Ganjil"
+    color: red;
+}
+
+=== Silahkan di coba sendiri ===
+
+*/
+
+/* CAMPURAN */
+/* ini akan merubah warna anak a dari parent li yang kelipatannya ganjil */
+li:nth-child(odd) a:hover{
+    color: green;
+}
+
+/* ini akan merubah warna anak a dari parent li yang kelipatannya genap */
+li:nth-child(even) a:hover{
+    color: red;
+}

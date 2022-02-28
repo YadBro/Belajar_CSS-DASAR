@@ -1,0 +1,61 @@
+/* PSEUDO CLASS atau KELAS SEMU adalah sebuah kelas yang aktif dalam keadaan tertentu saja.
+
+    "Dalam menuliskan PSEUDO Class harus di awali dengan titik dua ( : ).
+
+    PSEUDO CLASS terbagi menjadi beberapa tipe:
+    (BAGIAN 1) = PSEUDO CLASS yang berhubungan dengan link
+    1. :link    = style default pada sebuah link.
+    2. :hover   = style ketika kursor mouse berada diatas sebuah link / element.
+    3. :active  = style ketika sebuah link di klik (keadaan aktif).
+    4. :visited = style ketika sebuah link sudah pernah dibuat di kunjungi sebelumnya (menggunakan browser yang sama).
+
+*/
+
+/* PSEDO CLASS :link 
+
+    Psedo Class :link ini akan bekerja pada tag element link seperti a,etc.
+
+*/
+
+.hello:link{
+    color: orange;
+}
+
+
+/* PSEDO CLASS :link 
+
+    Psedo Class :hover ini akan bekerja ketika mouse menghover sebuah tag element HTML.
+
+*/
+
+
+.hello:hover{
+    color: green;
+    font-family: arial;
+    font-size: 20px;
+}
+
+
+/* PSEDO CLASS :active
+
+    Psedo Class :active ini akan bekerja ketika kita mengkliknya atau linknya active
+
+*/
+
+
+.hello:active{
+    font-style: italic;
+}
+
+
+
+/* PSEDO CLASS :visited
+
+    Psedo Class :visited ini akan bekerja ketika kita sudah menuju ke link tersebut.
+
+*/
+
+
+.hello:visited{
+    color: red;
+}

@@ -1,0 +1,35 @@
+/* PSEUDO CLASS atau KELAS SEMU adalah sebuah kelas yang aktif dalam keadaan tertentu saja.
+
+    "Dalam menuliskan PSEUDO Class harus di awali dengan titik dua ( : ).
+
+    PSEUDO CLASS terbagi menjadi beberapa tipe:
+    (BAGIAN 1) = PSEUDO CLASS yang berhubungan dengan link
+    1. :link    = style default pada sebuah link.
+    2. :hover   = style ketika kursor mouse berada diatas sebuah link / element.
+    3. :active  = style ketika sebuah link di klik (keadaan aktif).
+    4. :visited = style ketika sebuah link sudah pernah dibuat di kunjungi sebelumnya (menggunakan browser yang sama).
+
+    (BAGIAN 2) = PSEUDO CLASS yang berhubungan dengan posisi atau urutan element
+    PSEUDO CLASS bagian 2 ini akan aktif ketika tag elementnya merupakan child dari element lain".
+    1.  :first-child    = memilih element pertama dari sebuah parent.
+    2.  :last-child     = memilih element terakhir dari sebuah parent.
+    3.  :nth-child(n)   = memilih element ke-n dari sebuah parent.
+
+    "contoh kasus PSEUDO CLASS bagian 2 lihat di index_pseudo_class(bagian2).html"
+
+
+    (BAGIAN 3) <- Lanjutan dari bagian 2
+    PSEUDO CLASS bagian 3 untuk mengubah sebuah property element yang tidak memiliki child(anak)
+    1.  :first-of-type  = memilih element pertama dari sebuah jenis / tag.
+    2.  :last-of-type   = memilih element terakhir dari sebuah jenis / tag.
+*/
+
+/* Tag element p pertama akan berubah menjadi merah */
+p:first-of-type {
+    color: red;
+}
+
+/* Tag element p terakhir akan berubah menjadi merah */
+p:last-of-type {
+    color: green;
+}

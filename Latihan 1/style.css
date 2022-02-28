@@ -1,0 +1,43 @@
+/* Selector group */
+/* jika memiliki property yang sama bisa menggunakan koma */
+h1, h2{
+    font-family: arial; /* <- menentukan jenis tulisan */
+    /* font-weight: normal; <- menentukan tebal hurul */
+    font-variant: small-caps; /* <- menentukan besar hurufnya */
+    font-style: italic; /* <- menentukan style tulisannya */
+    color: green;
+}
+p{
+    font-family: 'Times New Roman';
+    /* line-height: 50px; <- menentukan jarak antar baris  */
+    
+}
+body{
+    font-family: arial;
+}
+
+/* seperator space */
+/* artinya tolong ubah tag a yang di dalam li dan juga di dalam ul */
+ul li a {
+    color: orange;
+}
+ol li a {
+    color: red;
+}
+
+/* memanggil berdasarkan id( # ) tag html */
+#p1 {
+    color: orange;
+}
+
+/* memanggil berdasarkan class ( . ) tag html */
+.p2{
+    color: red;
+}
+.cetak-tebal {
+    font-weight: bold;
+}
+/* CSS tolong cari tag p yang memiliki kelas cetak-tebal */
+p.cetak-tebal{
+    font-size: 30px;
+}
