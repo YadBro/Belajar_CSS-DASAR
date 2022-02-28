@@ -1,0 +1,22 @@
+/* 
+Inheritance adalah sebuah pewarisat sifat yang di miliki orang tua ke anaknya
+
+tergantung dari property si anaknya
+
+ini akan merubah seluruh element anak dari dari body
+.
+Coba jalankan...
+*/
+body {
+    font-family: arial;
+    color: darkgray;
+}
+
+/* mungkin kalian melihat ada sebuah tulisan yang tidak berwarna pada
+element body semua anak sudah di definisikan warnanya menjadi abu abu
+tetapi anak tag element dari a tidak.
+
+Karena tag element a tidak memiliki sebuah property color
+
+Lanjut CSS di bagian 2
+*/
